@@ -1,0 +1,87 @@
+/* CONTACTO INICIA */
+.banners_cortos{
+    height: 300px;
+    width: 100%;
+    background-image: url(../assets/img/banner_contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 20px;  
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    justify-items: center;
+}
+main.contacto{
+    height: 100%;
+    padding: 20px;
+    .encabezado_contacto{
+        height: 120px;
+        width: 100%;
+        margin-top: 20px;
+        border-bottom: 1px solid $gris;
+        width: 100%;
+        h1{
+        @include titulos(0px, relative, 0px, 100%, $futuraHO, 18px, $negro);
+        }
+        p{
+            width: 100%;
+            font-family: $montserratR;
+            font-size: 13px;
+            color: $gris;
+            margin-top: 10px;
+        }
+    }
+    form{
+        width: 100%;
+        margin-top: 20px;
+        font-family: $montserratM;
+        font-size: 12px;
+        background-color: $negro;
+        padding: 10px;
+        color: $blanco;
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        .caja1{
+            width: 100%;
+            select{
+                width: 100%;
+                background-color: $verde;
+            }
+            input{
+                width: 100%;
+            }
+        }
+        .caja2{
+            width: 100%;
+            input{
+                width: 100%;
+            }
+            textarea{
+                width: 100%;
+            }
+            div{
+                text-align: center;
+
+                .boton{
+                    margin-top: 10px;
+                    height: 30px;
+                    width: 100px;
+                    font-family: $montserratR;
+                    text-align: center;
+                    border: 1px solid $blanco;
+                    background-color: $negro;
+                    color: $blanco;
+                    &:hover{
+                        background-color: $verde;
+                        color: $negro;
+                        border: none;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
+/* CONTACTO FINALIZA */

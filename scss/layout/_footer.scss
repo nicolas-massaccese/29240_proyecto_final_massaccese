@@ -1,0 +1,128 @@
+/* FOOTER SYLE INICIA */
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: $negro;
+    h4{
+        font-size: 15px;
+        font-family: $futuraHO;
+        text-transform: uppercase;
+        color: $verde;
+    }
+    a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-family: $montserratM;
+        display: block;
+        font-size: 10px;
+        line-height: 20px;
+    }
+}
+
+.shipping{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $blanco;
+    padding: 20px;
+    a{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            height: 40px;
+            transition: 0.5s;
+        }
+        p{
+            color: $blanco;
+            font-family: $montserratR;
+            font-size: 10px;
+        }
+        &:hover p{
+            color: $verde
+        }
+        &:hover img{
+            margin-top: -10px;
+        }
+    }
+
+}
+
+.bajada{
+    display:flex ;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo_footer{
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid $blanco;
+    display: inline;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 150px;
+    }
+}
+
+.redes{
+    display: inline;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    div{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40px;
+        width: 90px;
+        img{
+            height: 30px;
+        }
+    }
+}
+
+.empresa_footer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    border-bottom: 1px solid $blanco;
+    padding: 20px;
+    p{
+        width: 100%;
+        color: $blanco;
+        font-family: $montserratR;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+.contenido_ayuda{
+    width: 100%;
+    padding: 20px;
+    display: inline;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    .contenido_footer{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+    .ayuda_footer{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }  
+}
+/* FOOTER STYLE FINALIZA */

@@ -1,0 +1,58 @@
+/* MAIN STYLE INICIA */
+main{
+    align-items: center;
+    height: 420px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .banner{
+        top: 40px;
+        height: 420px;
+        width: 100%;
+        padding: 20px;
+        background-image: url(../assets/img/bannerprincipal_chico.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -148px;     
+        h1{
+            @include titulos(25px, relative, 100px, 200px, $futuraBO, 35px, $blanco);
+        }
+        a{
+            top: 30px;
+            height: 30px;
+            width: 150px;
+            border: solid $blanco 1px;
+            display: block;
+            transform: skewX(-9deg);
+            text-align: center;
+            line-height: 30px;
+            color: $blanco;
+            position: relative;
+            text-decoration: none;
+            transition: 1.5s;
+            p{
+                width: 150px;
+                display: block;
+                text-align: center;
+                line-height: 30px;
+                font-family: $montserratI;
+                font-size: 17px;
+                color: $blanco;
+                position: relative;
+                transform: skewX(9deg);
+                transition: 2s;
+            }
+            &:hover{
+                background-color: $blanco;
+                border: solid $blanco 1px;
+                width: 180px;
+                p{
+                    color: $negro;  
+                    width: 180px;
+                }
+            }
+            
+        }
+    }
+}
+/* MAIN STYLE FINALIZA */

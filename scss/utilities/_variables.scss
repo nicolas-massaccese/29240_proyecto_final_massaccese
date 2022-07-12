@@ -1,0 +1,29 @@
+// fuentes
+$futuraBO: "FuturaStd-BoldOblique";
+$futuraHO: "FuturaStd-HeavyOblique";
+$futuraExtBoldCondO: "FuturaStd-CondExtraBoldObl";
+$montserratR: "Montserrat-Regular";
+$montserratI: "Montserrat-Italic";
+$montserratBI: "Montserrat-BoldItalic";
+$montserratM: "Montserrat-Medium";
+
+// colores
+$negro: #000000;
+$blanco: #ffffff;
+$verde: #8bd193;
+$gris: #838383;
+$grisOscuro: #353535;
+
+
+
+// mixin
+
+@mixin titulos ($top, $position, $margintop, $widht, $family, $size, $color) {
+    top: $top;
+    position: $position;
+    margin-top: $margintop;
+    width: $widht;
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+}

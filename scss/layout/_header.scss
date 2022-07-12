@@ -1,0 +1,181 @@
+/* HEADER STYLE INICIA */
+header{
+    height:90px;
+    width: 100%;
+    z-index: 98;
+    position: absolute;
+    
+    // marquesina inicia
+    .marquesina{
+        height: 30px;
+        width: 100%;
+        padding-left: -100%;
+        background-color: $negro;
+        white-space: nowrap;
+        overflow: hidden;
+        div{
+            line-height: 30px;
+            text-align: center;
+            font-family: $futuraHO;
+            font-size: 10px;
+            color: $blanco;
+            padding-left: 100%;
+            display: inline-block;
+            text-transform: uppercase;
+            animation: marquesina_animada 15s linear infinite;
+            figure{
+                display: inline-block;
+                img{
+                    width: 10px;
+                    line-height: 30px;
+                    display: inline-block;
+                    margin-left: 70px;
+                }
+            }           
+            P{
+                display: inline-block;
+                letter-spacing: 3px;
+                word-spacing: 3px;
+                margin-left: 3px;
+            }
+        }
+        @keyframes marquesina_animada {
+            100%{
+                transform: translate(-100%, 0);
+            }   
+        }    
+    }
+    // marquesina finaliza
+    
+    //Nav inicia
+    #io_menu{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        mix-blend-mode: difference;
+        background-color: rgba(0, 0, 0, 0.098);
+        padding: 20px;
+
+        //show menu inicia
+        .io_menu_movil{
+            height: 40px;
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            img{
+                height: 100%;
+                display: inline-block;  
+            }
+        }
+        // nav inicia
+        #card_menu{
+            height: 100vh;
+            width: 3100vw;
+            margin-top: 632px;
+            margin-left: -20px;
+            background-color: rgba(0, 0, 0, 0.367);
+            z-index: 998;
+            position: fixed;
+            display: none;
+            #desplegable{
+                height: 500px;
+                width: 250px;
+                background-color: $blanco;
+                z-index: 999;
+                position: absolute;
+                transform: translateX(-250px);
+                animation: entrada_menu 500ms ease-in-out both;
+                @keyframes entrada_menu {
+                    100%{
+                        transform: translateX(0px);
+                    }
+                }
+                #hide_menu{
+                    bottom: 10px;
+                    right: 10px;
+                    position: absolute;
+                    mix-blend-mode: multiply;
+                    display: inline-block;
+                    cursor: pointer;
+                    img{
+                        height: 100%;
+                        text-align: left;
+                        display: inline-block;  
+                    }
+                }
+                #estrella{
+                    width: 100%;
+                    vertical-align: middle;
+                    margin-top: 40px;
+                    margin-bottom: 55px;
+                    display: flex;
+                    justify-content: center;
+                    
+                    img{
+                        width: 45%;
+                    }
+                }
+                
+                ul{
+                    li{
+                        list-style: none;
+                        border-top: 2px black;
+                        line-height: 50px;
+                        border-bottom: 2px solid rgb(236, 236, 236);
+                        cursor: pointer;
+                        &:hover{
+                            color: $negro;
+                            display: block;
+                            background-color: $verde;
+                        }
+                        &:hover a{
+                            color: $negro;
+                        }
+                        a{
+                            text-decoration: none;
+                            font-family: $futuraBO;
+                            font-size: 20px;
+                            margin-left: 20px;
+                            color: rgba(0, 0, 0, 0.579);
+                            mix-blend-mode: multiply;
+                            transition: 0.5s;
+                            
+                        }
+                    }
+                }           
+            }
+        }
+        
+        // logo inicia
+        .logo{
+            width: 120px;
+            align-items: center;
+            display: block;
+            mix-blend-mode: multiply;
+            position: relative;
+            text-align: center;
+            z-index: 98;
+        }
+        // logo finaliza
+        .lupa_carrito{
+            height: 40px;
+            width: 60px;
+            text-align: center;
+            mix-blend-mode: multiply;
+            display: flex;
+            justify-content: flex-start;justify-content: flex-start;
+            align-items: center;
+            img{
+                height: 40px;
+                mix-blend-mode: multiply;
+                display: inline;
+                padding: 10px;
+            }
+        }
+    }
+    // nav finaliza
+}       
+/* HEADER STYLE FINALIZA */

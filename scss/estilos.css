@@ -1,0 +1,1942 @@
+/* HEADER STYLE INICIA */
+header {
+  height: 90px;
+  width: 100%;
+  z-index: 98;
+  position: absolute;
+}
+header .marquesina {
+  height: 30px;
+  width: 100%;
+  padding-left: -100%;
+  background-color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+}
+header .marquesina div {
+  line-height: 30px;
+  text-align: center;
+  font-family: "FuturaStd-HeavyOblique";
+  font-size: 10px;
+  color: #ffffff;
+  padding-left: 100%;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-animation: marquesina_animada 15s linear infinite;
+          animation: marquesina_animada 15s linear infinite;
+}
+header .marquesina div figure {
+  display: inline-block;
+}
+header .marquesina div figure img {
+  width: 10px;
+  line-height: 30px;
+  display: inline-block;
+  margin-left: 70px;
+}
+header .marquesina div P {
+  display: inline-block;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  margin-left: 3px;
+}
+@-webkit-keyframes marquesina_animada {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes marquesina_animada {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+header #io_menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  mix-blend-mode: difference;
+  background-color: rgba(0, 0, 0, 0.098);
+  padding: 20px;
+}
+header #io_menu .io_menu_movil {
+  height: 40px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+}
+header #io_menu .io_menu_movil img {
+  height: 100%;
+  display: inline-block;
+}
+header #io_menu #card_menu {
+  height: 100vh;
+  width: 3100vw;
+  margin-top: 632px;
+  margin-left: -20px;
+  background-color: rgba(0, 0, 0, 0.367);
+  z-index: 998;
+  position: fixed;
+  display: none;
+}
+header #io_menu #card_menu #desplegable {
+  height: 500px;
+  width: 250px;
+  background-color: #ffffff;
+  z-index: 999;
+  position: absolute;
+  transform: translateX(-250px);
+  -webkit-animation: entrada_menu 500ms ease-in-out both;
+          animation: entrada_menu 500ms ease-in-out both;
+}
+@-webkit-keyframes entrada_menu {
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes entrada_menu {
+  100% {
+    transform: translateX(0px);
+  }
+}
+header #io_menu #card_menu #desplegable #hide_menu {
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+  mix-blend-mode: multiply;
+  display: inline-block;
+  cursor: pointer;
+}
+header #io_menu #card_menu #desplegable #hide_menu img {
+  height: 100%;
+  text-align: left;
+  display: inline-block;
+}
+header #io_menu #card_menu #desplegable #estrella {
+  width: 100%;
+  vertical-align: middle;
+  margin-top: 40px;
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: center;
+}
+header #io_menu #card_menu #desplegable #estrella img {
+  width: 45%;
+}
+header #io_menu #card_menu #desplegable ul li {
+  list-style: none;
+  border-top: 2px black;
+  line-height: 50px;
+  border-bottom: 2px solid rgb(236, 236, 236);
+  cursor: pointer;
+}
+header #io_menu #card_menu #desplegable ul li:hover {
+  color: #000000;
+  display: block;
+  background-color: #8bd193;
+}
+header #io_menu #card_menu #desplegable ul li:hover a {
+  color: #000000;
+}
+header #io_menu #card_menu #desplegable ul li a {
+  text-decoration: none;
+  font-family: "FuturaStd-BoldOblique";
+  font-size: 20px;
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.579);
+  mix-blend-mode: multiply;
+  transition: 0.5s;
+}
+header #io_menu .logo {
+  width: 120px;
+  align-items: center;
+  display: block;
+  mix-blend-mode: multiply;
+  position: relative;
+  text-align: center;
+  z-index: 98;
+}
+header #io_menu .lupa_carrito {
+  height: 40px;
+  width: 60px;
+  text-align: center;
+  mix-blend-mode: multiply;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+}
+header #io_menu .lupa_carrito img {
+  height: 40px;
+  mix-blend-mode: multiply;
+  display: inline;
+  padding: 10px;
+}
+
+/* HEADER STYLE FINALIZA */
+/* MAIN STYLE INICIA */
+main {
+  align-items: center;
+  height: 420px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+main .banner, main .banner_comunidad {
+  top: 40px;
+  height: 420px;
+  width: 100%;
+  padding: 20px;
+  background-image: url(../assets/img/bannerprincipal_chico.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -148px;
+}
+main .banner h1, main .banner_comunidad h1 {
+  top: 25px;
+  position: relative;
+  margin-top: 100px;
+  width: 200px;
+  font-family: "FuturaStd-BoldOblique";
+  font-size: 35px;
+  color: #ffffff;
+}
+main .banner a, main .banner_comunidad a {
+  top: 30px;
+  height: 30px;
+  width: 150px;
+  border: solid #ffffff 1px;
+  display: block;
+  transform: skewX(-9deg);
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  transition: 1.5s;
+}
+main .banner a p, main .banner_comunidad a p {
+  width: 150px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Montserrat-Italic";
+  font-size: 17px;
+  color: #ffffff;
+  position: relative;
+  transform: skewX(9deg);
+  transition: 2s;
+}
+main .banner a:hover, main .banner_comunidad a:hover {
+  background-color: #ffffff;
+  border: solid #ffffff 1px;
+  width: 180px;
+}
+main .banner a:hover p, main .banner_comunidad a:hover p {
+  color: #000000;
+  width: 180px;
+}
+
+/* MAIN STYLE FINALIZA */
+.slider_container {
+  width: 100%;
+  align-items: center;
+  height: 420px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+ul.slider_opacity {
+  position: relative;
+  width: 100%;
+}
+
+ul.slider_opacity li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  display: none;
+  width: inherit;
+  height: inherit;
+  transition: all 0.5s;
+}
+ul.slider_opacity li h1 {
+  top: 25px;
+  position: relative;
+  margin-top: 100px;
+  width: 200px;
+  font-family: "FuturaStd-BoldOblique";
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.botton_skew {
+  top: 30px;
+  height: 30px;
+  width: 150px;
+  border: solid #ffffff 1px;
+  display: block;
+  transform: skewX(-9deg);
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  transition: 1.5s;
+}
+.botton_skew p {
+  width: 150px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Montserrat-Italic";
+  font-size: 17px;
+  color: #ffffff;
+  position: relative;
+  transform: skewX(9deg);
+  transition: 2s;
+}
+.botton_skew:hover {
+  background-color: #ffffff;
+  border: solid #ffffff 1px;
+  width: 180px;
+}
+.botton_skew:hover p {
+  color: #000000;
+  width: 180px;
+}
+
+#cuadro1 {
+  height: 420px;
+  width: 100%;
+  padding: 20px;
+  width: 100%;
+  list-style: none;
+  background-image: url(../assets/img/bannerprincipal_chico.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -148px;
+}
+
+#cuadro2 {
+  height: 420px;
+  width: 100%;
+  padding: 20px;
+  width: 100%;
+  list-style: none;
+  background-image: url(../assets/img/banner_comunidad.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -458px;
+}
+
+#cuadro3 {
+  height: 420px;
+  width: 100%;
+  padding: 20px;
+  width: 100%;
+  list-style: none;
+  background-image: url(../assets/img/banner_bolsos_historia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu_slider {
+  top: 380px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.menu_slider li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.menu_slider li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.249);
+  width: 15px;
+  height: 15px;
+  font-size: 20px;
+  border-radius: 100%;
+  margin: 10px;
+}
+.menu_slider li a:hover {
+  background-color: rgba(0, 0, 0, 0.599);
+}
+
+ul.slider_opacity li:first-child {
+  opacity: 1;
+  display: block;
+}
+
+ul.slider_opacity li:target {
+  opacity: 1;
+  display: block;
+}
+
+.section1 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 40px 0px;
+  background-color: #000000;
+}
+.section1 div {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #000000;
+  position: relative;
+}
+.section1 div .section1_encabezado {
+  height: 40px;
+  width: 100%;
+  background-image: url(../assets/img/marco_titulo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section1 div .section1_encabezado h2 {
+  top: 0px;
+  position: relative;
+  margin-top: 0px;
+  width: 100%;
+  font-family: "FuturaStd-CondExtraBoldObl";
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  line-height: 40px;
+}
+.section1 div #aviation_style {
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+.section1 div #aviation_style img {
+  width: 100%;
+  position: relative;
+}
+.section1 div p {
+  width: 100%;
+  color: #ffffff;
+  font-family: "FuturaStd-CondExtraBoldObl";
+  padding: 0px 50px;
+  font-size: 20px;
+  position: relative;
+  text-align: right;
+}
+.section1 div p.right {
+  width: 100%;
+  color: #ffffff;
+  font-family: "FuturaStd-CondExtraBoldObl";
+  padding: 0px 50px;
+  font-size: 20px;
+  position: relative;
+  text-align: left;
+}
+.section1 div p.cuerpo {
+  color: #ffffff;
+  font-family: "Montserrat-Regular";
+  font-size: 15px;
+  line-height: 25px;
+  padding: 30px 50px;
+  position: relative;
+  text-align: left;
+}
+.section1 #urban_style {
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+.section1 #urban_style img {
+  width: 100%;
+  position: relative;
+}
+
+/* PRODUCTOS CATEGORIAS INICIA */
+.section2 {
+  background-color: #ebebed;
+  padding: 0px 0px 20px 0px;
+}
+.section2 .section2_encabezado {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px 40px 0px;
+}
+.section2 .section2_encabezado .fondo_skew {
+  height: 30px;
+  width: 280px;
+  background-color: #000000;
+  transform: skewX(-9deg);
+}
+.section2 .section2_encabezado .fondo_skew h3 {
+  top: 0px;
+  position: relative;
+  margin-top: 0px;
+  width: 100%;
+  font-family: "FuturaStd-BoldOblique";
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  transform: skewX(9deg);
+}
+.section2 .section2_encabezado p {
+  width: 100%;
+  font-family: "Montserrat-Regular";
+  font-size: 15px;
+  line-height: 25px;
+  color: #838383;
+  text-align: center;
+  padding: 10px 20px 0px 20px;
+}
+.section2 .grid_container_productos {
+  height: auto;
+  width: 100%;
+}
+.section2 .grid_container_productos .productos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.section2 .grid_container_productos .productos .mochilas-categorias,
+.section2 .grid_container_productos .productos .bolsos-categorias,
+.section2 .grid_container_productos .productos .bolsosv-categorias,
+.section2 .grid_container_productos .productos .accesorios-categorias {
+  width: 100%;
+  height: 300px;
+  transition: 1.5s;
+}
+.section2 .grid_container_productos .productos .mochilas-categorias {
+  background-image: url("../assets/img/mochilas.jpg");
+  background-size: 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+.section2 .grid_container_productos .productos .bolsos-categorias {
+  background-image: url("../assets/img/bolsos.jpg");
+  background-size: 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+.section2 .grid_container_productos .productos .bolsosv-categorias {
+  background-image: url("../assets/img/bolsosv.jpg");
+  background-size: 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+.section2 .grid_container_productos .productos .accesorios-categorias {
+  background-image: url("../assets/img/accesorios.jpg");
+  background-size: 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+.section2 .grid_container_productos .productos .mochilas2-alt,
+.section2 .grid_container_productos .productos .bolsos2-alt,
+.section2 .grid_container_productos .productos .bolsosv2-alt,
+.section2 .grid_container_productos .productos .accesorios2-alt {
+  width: 100%;
+  height: 300px;
+  transition: 1.5s;
+}
+.section2 .grid_container_productos .productos:hover .mochilas2-alt {
+  background-image: url("../assets/img/mochilas2.jpg");
+}
+.section2 .grid_container_productos .productos:hover .bolsos2-alt {
+  background-image: url("../assets/img/bolsos2.jpg");
+}
+.section2 .grid_container_productos .productos:hover .bolsosv2-alt {
+  background-image: url("../assets/img/bolsosv2.jpg");
+}
+.section2 .grid_container_productos .productos:hover .accesorios2-alt {
+  background-image: url("../assets/img/accesorios2.jpg");
+}
+.section2 .grid_container_productos .productos .marco_skew {
+  height: 30px;
+  width: 150px;
+  border: solid #838383 1px;
+  display: block;
+  transform: skewX(-9deg);
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  transition: 1.5s;
+}
+.section2 .grid_container_productos .productos .marco_skew p {
+  width: 150px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Montserrat-Italic";
+  font-size: 17px;
+  color: #838383;
+  position: relative;
+  transform: skewX(9deg);
+  transition: 2s;
+}
+.section2 .grid_container_productos .productos .marco_skew:hover {
+  background-color: #000000;
+  border: solid #000000 1px;
+}
+.section2 .grid_container_productos .productos .marco_skew:hover p {
+  color: #ffffff;
+  font-family: "Montserrat-BoldItalic";
+}
+.section2 .grid_container_productos .productos .marco_skew_largo {
+  height: 30px;
+  width: 200px;
+  border: solid #838383 1px;
+  display: block;
+  transform: skewX(-9deg);
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  transition: 1.5s;
+}
+.section2 .grid_container_productos .productos .marco_skew_largo p {
+  width: 200px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Montserrat-Italic";
+  font-size: 17px;
+  color: #838383;
+  position: relative;
+  transform: skewX(9deg);
+  transition: 2s;
+}
+.section2 .grid_container_productos .productos .marco_skew_largo:hover {
+  background-color: #000000;
+  border: solid #000000 1px;
+}
+.section2 .grid_container_productos .productos .marco_skew_largo:hover p {
+  color: #ffffff;
+  font-family: "Montserrat-BoldItalic";
+}
+
+/* PRODUCTOS CATEGORIAS FINALIZA */
+/* SECTION MISION STYLE INICIA */
+.mision {
+  height: 420px;
+}
+.mision .mision_banner {
+  top: 40px;
+  height: 420px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mision .mision_banner video {
+  height: 100%;
+}
+
+/* SECTION MISION STYLE FINALIZA */
+/* SECTION BANNER SECUNDARIOS STYLE INICIA */
+.banners_secundarios {
+  height: 250px;
+  width: 100%;
+  padding-left: 20px;
+  background-image: url(../assets/img/helicoptero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -190px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  justify-items: center;
+}
+.banners_secundarios h3 {
+  width: 180px;
+  font-family: "FuturaStd-BoldOblique";
+  font-size: 30px;
+  color: #ffffff;
+  position: relative;
+}
+.banners_secundarios a {
+  top: 10px;
+  height: 30px;
+  width: 150px;
+  border: solid #ffffff 1px;
+  display: block;
+  transform: skewX(-9deg);
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  transition: 1.5s;
+}
+.banners_secundarios a p {
+  width: 150px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Montserrat-Italic";
+  font-size: 17px;
+  color: #ffffff;
+  position: relative;
+  transform: skewX(9deg);
+  transition: 2s;
+}
+.banners_secundarios a:hover {
+  background-color: #ffffff;
+  border: solid #ffffff 1px;
+  width: 180px;
+}
+.banners_secundarios a:hover p {
+  color: #000000;
+  width: 180px;
+}
+
+/* SECTION BANNER SECUNDARIOS STYLE FINALIZA */
+/* FOOTER SYLE INICIA */
+footer {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+footer h4 {
+  font-size: 15px;
+  font-family: "FuturaStd-HeavyOblique";
+  text-transform: uppercase;
+  color: #8bd193;
+}
+footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Montserrat-Medium";
+  display: block;
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.shipping {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  padding: 20px;
+}
+.shipping a {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.shipping a img {
+  height: 40px;
+  transition: 0.5s;
+}
+.shipping a p {
+  color: #ffffff;
+  font-family: "Montserrat-Regular";
+  font-size: 10px;
+}
+.shipping a:hover p {
+  color: #8bd193;
+}
+.shipping a:hover img {
+  margin-top: -10px;
+}
+
+.bajada {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo_footer {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #ffffff;
+  display: inline;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo_footer img {
+  width: 150px;
+}
+
+.redes {
+  display: inline;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.redes div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  width: 90px;
+}
+.redes div img {
+  height: 30px;
+}
+
+.empresa_footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  border-bottom: 1px solid #ffffff;
+  padding: 20px;
+}
+.empresa_footer p {
+  width: 100%;
+  color: #ffffff;
+  font-family: "Montserrat-Regular";
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.contenido_ayuda {
+  width: 100%;
+  padding: 20px;
+  display: inline;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contenido_ayuda .contenido_footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+.contenido_ayuda .ayuda_footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+/* FOOTER STYLE FINALIZA */
+/* GALERIA INICIA */
+main.galeria {
+  height: 100%;
+  position: relative;
+  padding: 20px;
+}
+main.galeria .encabezado_galeria {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 10px 0px;
+}
+main.galeria .encabezado_galeria h1 {
+  top: 0px;
+  position: relative;
+  margin-top: 0px;
+  width: 100%;
+  font-family: "FuturaStd-HeavyOblique";
+  font-size: 18px;
+  color: #000000;
+}
+main.galeria .grid_container_galerias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  width: 100%;
+}
+main.galeria .grid_container_galerias .shop_card {
+  height: 250px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.098);
+  border: 2px solid #ffffff;
+  padding: 5px;
+  text-decoration: none;
+}
+main.galeria .grid_container_galerias .shop_card .mochila1-foto,
+main.galeria .grid_container_galerias .shop_card .mochila2-foto,
+main.galeria .grid_container_galerias .shop_card .bolso1-foto,
+main.galeria .grid_container_galerias .shop_card .morral1-foto,
+main.galeria .grid_container_galerias .shop_card .bolsov1-foto,
+main.galeria .grid_container_galerias .shop_card .bolsov2-foto,
+main.galeria .grid_container_galerias .shop_card .accesorio1-foto,
+main.galeria .grid_container_galerias .shop_card .accesorio2-foto {
+  width: 100%;
+  height: 150px;
+  background-color: #ffffff;
+}
+main.galeria .grid_container_galerias .shop_card .mochila1-foto {
+  background-image: url("../assets/img/mochila1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+main.galeria .grid_container_galerias .shop_card .mochila2-foto {
+  background-image: url("../assets/img/mochila2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+main.galeria .grid_container_galerias .shop_card .bolso1-foto {
+  background-image: url("../assets/img/bolso1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+main.galeria .grid_container_galerias .shop_card .morral1-foto {
+  background-image: url("../assets/img/morral1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+main.galeria .grid_container_galerias .shop_card .bolsov1-foto {
+  background-image: url("../assets/img/bolsov1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+main.galeria .grid_container_galerias .shop_card .bolsov2-foto {
+  background-image: url("../assets/img/bolsov2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+main.galeria .grid_container_galerias .shop_card .accesorio1-foto {
+  background-image: url("../assets/img/accesorio1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+main.galeria .grid_container_galerias .shop_card .accesorio2-foto {
+  background-image: url("../assets/img/accesorio2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebebed;
+}
+main.galeria .grid_container_galerias .shop_card .tipo {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-family: "FuturaStd-BoldOblique";
+  color: #000000;
+  font-size: 12px;
+  border-top: 1px solid #838383;
+  border-bottom: 1px solid #838383;
+  mix-blend-mode: multiply;
+}
+main.galeria .grid_container_galerias .shop_card div {
+  height: 60px;
+  padding: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+main.galeria .grid_container_galerias .shop_card div .modelo {
+  font-family: "Montserrat-Medium";
+  font-size: 11px;
+  color: #353535;
+}
+main.galeria .grid_container_galerias .shop_card div .genero {
+  font-family: "Montserrat-Regular";
+  font-size: 12px;
+  color: #838383;
+}
+main.galeria .grid_container_galerias .shop_card div .precio {
+  height: 20px;
+  line-height: 20px;
+  font-family: "Montserrat-Regular";
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat-Medium";
+  mix-blend-mode: multiply;
+  background-color: #8bd193;
+}
+
+/* GALERIA FINALIZA */
+/* COMUNIDAD PAGINA INICIA */
+main .banner_comunidad {
+  background-image: url(../assets/img/banner_comunidad.jpg);
+  background-position: -450px;
+}
+main .banner_comunidad h1 {
+  top: 25px;
+  position: relative;
+  margin-top: 100px;
+  width: 200px;
+  font-family: "FuturaStd-BoldOblique";
+  font-size: 35px;
+  color: #ffffff;
+}
+
+section .grid_container_comunidad {
+  width: 100%;
+}
+section .grid_container_comunidad .notas {
+  text-decoration: none;
+  width: 100%;
+}
+section .grid_container_comunidad .notas img {
+  width: 100%;
+}
+section .grid_container_comunidad .notas .bajada_nota {
+  padding: 10px 20px 20px 20px;
+  transition: 1s;
+}
+section .grid_container_comunidad .notas .bajada_nota h3 {
+  text-align: left;
+  line-height: 25px;
+  color: black;
+  font-family: "FuturaStd-BoldOblique";
+  font-size: 20px;
+}
+section .grid_container_comunidad .notas .bajada_nota p {
+  text-align: left;
+  line-height: 30px;
+  color: #838383;
+  font-family: "Montserrat-Regular";
+  font-size: 15px;
+}
+
+/* COMUNIDAD PAGINA FINALIZA */
+/* CONTACTO INICIA */
+.banners_cortos {
+  height: 300px;
+  width: 100%;
+  background-image: url(../assets/img/banner_contacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  justify-items: center;
+}
+
+main.contacto {
+  height: 100%;
+  padding: 20px;
+}
+main.contacto .encabezado_contacto {
+  height: 120px;
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: 1px solid #838383;
+  width: 100%;
+}
+main.contacto .encabezado_contacto h1 {
+  top: 0px;
+  position: relative;
+  margin-top: 0px;
+  width: 100%;
+  font-family: "FuturaStd-HeavyOblique";
+  font-size: 18px;
+  color: #000000;
+}
+main.contacto .encabezado_contacto p {
+  width: 100%;
+  font-family: "Montserrat-Regular";
+  font-size: 13px;
+  color: #838383;
+  margin-top: 10px;
+}
+main.contacto form {
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Montserrat-Medium";
+  font-size: 12px;
+  background-color: #000000;
+  padding: 10px;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main.contacto form .caja1 {
+  width: 100%;
+}
+main.contacto form .caja1 select {
+  width: 100%;
+  background-color: #8bd193;
+}
+main.contacto form .caja1 input {
+  width: 100%;
+}
+main.contacto form .caja2 {
+  width: 100%;
+}
+main.contacto form .caja2 input {
+  width: 100%;
+}
+main.contacto form .caja2 textarea {
+  width: 100%;
+}
+main.contacto form .caja2 div {
+  text-align: center;
+}
+main.contacto form .caja2 div .boton {
+  margin-top: 10px;
+  height: 30px;
+  width: 100px;
+  font-family: "Montserrat-Regular";
+  text-align: center;
+  border: 1px solid #ffffff;
+  background-color: #000000;
+  color: #ffffff;
+}
+main.contacto form .caja2 div .boton:hover {
+  background-color: #8bd193;
+  color: #000000;
+  border: none;
+}
+
+/* CONTACTO FINALIZA */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#normal {
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.preloader {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  z-index: 1000;
+}
+.preloader img {
+  width: 150px;
+}
+
+.subir {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0.558);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-image: url(../assets/img/altimetro_subir.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 47px;
+  transition: 0.5s;
+  z-index: 997;
+}
+.subir img {
+  opacity: 0.6;
+  transform: rotate(180deg);
+}
+
+.subir:hover {
+  background-color: #ffffff;
+}
+
+.subir:hover img {
+  transform: rotate(540deg);
+  transition: 1.5s;
+  opacity: 1;
+}
+
+/* @MEDIA QUERIES INICIA */
+@media only screen and (min-width: 426px) {
+  header .marquesina {
+    font-size: 10px;
+  }
+  header .marquesina img {
+    width: 11px;
+  }
+  header .flex_contenedor_padre {
+    padding: 40px;
+  }
+  header .hamburguesa {
+    display: inline-block;
+  }
+  header .hamburguesa img {
+    height: 20px;
+    display: inline-block;
+  }
+  header .logo {
+    width: 125px;
+  }
+  header .lupa_carrito {
+    height: 25px;
+    width: 50px;
+  }
+  header .lupa_carrito img {
+    height: 25px;
+  }
+  #cuadro1 {
+    background-position: -80px;
+    padding: 20px 40px;
+  }
+  #cuadro2 {
+    background-position: -410px;
+    padding: 20px 40px;
+  }
+  #cuadro3 {
+    background-position: -300px;
+    padding: 20px 40px;
+  }
+  section .grid_container_productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .banners_secundarios {
+    padding: 20px 40px;
+    background-position: -120px;
+  }
+  main.galeria {
+    padding: 35px;
+  }
+  main .banner_comunidad {
+    padding: 20px 40px;
+    background-position: -410px;
+  }
+  main.contacto {
+    padding: 35px;
+  }
+  main.contacto .encabezado_contacto {
+    height: 100px;
+  }
+}
+.shipping {
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.logo_footer {
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.empresa_footer {
+  padding: 40px;
+}
+
+.contenido_ayuda {
+  padding: 40px;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 498px) {
+  header .marquesina {
+    font-size: 10px;
+  }
+  header .marquesina img {
+    width: 11px;
+  }
+  #cuadro1 {
+    background-position: -50px;
+    padding: 20px 60px;
+  }
+  #cuadro2 {
+    background-position: -400px;
+    padding: 20px 60px;
+  }
+  #cuadro3 {
+    background-position: -300px;
+    padding: 20px 60px;
+  }
+  section .grid_container_productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section .grid_container_productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .banners_secundarios {
+    background-position: -50px;
+  }
+  main.galeria .grid_container_galerias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main .banner_comunidad {
+    padding: 20px 60px;
+    background-position: -400px;
+  }
+  .section1 div p, .section1 div p.right {
+    padding: 0px 80px;
+  }
+  .section1 div p.cuerpo {
+    padding: 30px 80px;
+  }
+  .section2 .section2_encabezado {
+    padding: 20px 40px;
+  }
+  .bajada_nota {
+    padding: 20px 40px;
+  }
+}
+@media only screen and (min-width: 563px) {
+  #cuadro1 {
+    background-position: center;
+    padding: 20px 60px;
+  }
+  #cuadro2 {
+    background-position: -380px;
+    padding: 20px 60px;
+  }
+  #cuadro3 {
+    background-position: -200px;
+    padding: 20px 60px;
+  }
+  .section1 div p, .section1 div p.right {
+    padding: 0px 100px;
+  }
+  .section1 div p.cuerpo {
+    padding: 30px 80px;
+  }
+  section .grid_container_productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .banners_secundarios {
+    background-position: center;
+  }
+  main.galeria .encabezado_galeria {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  main.galeria .grid_container_galerias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px;
+  }
+  main.galeria .grid_container_galerias .shop_card {
+    height: 260px;
+    padding: 10px;
+    border: 3px solid #ffffff;
+  }
+  main .banner_comunidad {
+    padding: 20px 40px;
+    background-position: -380px;
+  }
+  main.contacto {
+    padding: 35px;
+  }
+  main.contacto .encabezado_contacto {
+    height: 100px;
+  }
+  main.contacto form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+  }
+  main.contacto form .caja1 {
+    width: 200px;
+  }
+  main.contacto form .caja2 {
+    width: 200px;
+  }
+  main.contacto form .caja2 textarea {
+    height: 150px;
+  }
+  main.contacto form .caja2 div {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 652px) {
+  #cuadro1 {
+    background-position: center;
+    padding: 20px 100px;
+  }
+  #cuadro2 {
+    background-position: -330px;
+    padding: 20px 100px;
+  }
+  #cuadro3 {
+    background-position: -170px;
+    padding: 20px 100px;
+  }
+  main.galeria .grid_container_galerias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5px;
+  }
+  main.galeria .grid_container_galerias .shop_card {
+    height: 260px;
+    padding: 10px;
+    border: 3px solid #ffffff;
+  }
+  main .banner_comunidad {
+    padding: 20px 100px;
+    background-position: -330px;
+  }
+  main.contacto {
+    padding: 35px;
+  }
+  main.contacto .encabezado_contacto {
+    height: 100px;
+  }
+  main.contacto form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+  }
+  main.contacto form .caja1 {
+    width: 250px;
+  }
+  main.contacto form .caja2 {
+    width: 250px;
+  }
+  main.contacto form .caja2 textarea {
+    height: 150px;
+  }
+  main.contacto form .caja2 div {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #cuadro1 {
+    background-position: center;
+    padding: 20px 120px;
+  }
+  #cuadro2 {
+    background-position: center;
+    padding: 20px 120px;
+  }
+  #cuadro3 {
+    background-position: -70px;
+    padding: 20px 120px;
+  }
+  main.mision {
+    height: 500px;
+  }
+  main.mision .mision_banner video {
+    height: 120%;
+  }
+  .section1 {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    padding: 0px 0px 0px 0px;
+  }
+  section .grid_container_productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .section1 {
+    padding: 40px 40px 80px 40px;
+  }
+  .section1 div {
+    margin-top: 20px;
+  }
+  .section1 div .section1_encabezado {
+    height: 40px;
+    width: 100%;
+    background-image: url(../assets/img/marco_titulo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .section1 div .section1_encabezado h2 {
+    top: 0px;
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    font-family: "FuturaStd-CondExtraBoldObl";
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    line-height: 40px;
+  }
+  .section1 div p, .section1 div p.right {
+    padding: 0px 80px;
+  }
+  .section1 div p.cuerpo {
+    padding: 30px 80px;
+  }
+  .banners_secundarios {
+    padding: 20px 120px;
+    background-position: center;
+  }
+  main .banner_comunidad {
+    padding: 20px 120px;
+    background-position: center;
+  }
+  .section2 .section2_encabezado {
+    padding: 20px 180px;
+  }
+  section .grid_container_comunidad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+  .bajada_nota {
+    padding: 20px 120px;
+  }
+  main.contacto {
+    padding: 35px;
+  }
+  main.contacto .encabezado_contacto {
+    height: 100px;
+    margin-top: 20px;
+  }
+  main.contacto .encabezado_contacto p {
+    width: 80%;
+  }
+  main.contacto form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    padding: 15px;
+  }
+  main.contacto form .caja1 {
+    width: 300px;
+  }
+  main.contacto form .caja2 {
+    width: 300px;
+  }
+  main.contacto form .caja2 textarea {
+    height: 150px;
+  }
+  main.contacto form .caja2 div {
+    text-align: left;
+  }
+  .grid_container_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .shipping {
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  .logo_footer {
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: none;
+  }
+  .empresa_footer {
+    padding: 20px 10px;
+    border-bottom: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .empresa_footer p {
+    font-size: 10px;
+  }
+  .contenido_ayuda {
+    padding: 20px;
+    justify-content: space-around;
+    border-bottom: none;
+  }
+  h4 {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 90px;
+    width: 100%;
+    z-index: 98;
+    position: absolute;
+  }
+  header #io_menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    mix-blend-mode: difference;
+    background-color: rgba(0, 0, 0, 0.098);
+    padding: 20px;
+  }
+  header #io_menu .io_menu_movil {
+    height: 40px;
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  header #io_menu .io_menu_movil img {
+    height: 100%;
+    display: inline-block;
+  }
+  header #io_menu #card_menu {
+    height: auto;
+    width: 100px;
+    margin-top: -45px;
+    margin-left: -20px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 998;
+    position: relative;
+    display: inline-block;
+  }
+  header #io_menu #card_menu #desplegable {
+    height: 500px;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 999;
+    position: absolute;
+    transform: translateX(0px);
+  }
+  header #io_menu #card_menu #desplegable #hide_menu {
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    mix-blend-mode: multiply;
+    display: none;
+    cursor: pointer;
+  }
+  header #io_menu #card_menu #desplegable #hide_menu img {
+    height: 100%;
+    text-align: left;
+    display: inline-block;
+  }
+  header #io_menu #card_menu #desplegable #estrella {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 40px;
+    margin-bottom: 55px;
+    display: none;
+    justify-content: center;
+  }
+  header #io_menu #card_menu #desplegable #estrella img {
+    width: 45%;
+    display: none;
+  }
+  header #io_menu #card_menu #desplegable ul {
+    display: flex;
+  }
+  header #io_menu #card_menu #desplegable ul li {
+    list-style: none;
+    border-top: 2px black;
+    line-height: 50px;
+    border-bottom: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  header #io_menu #card_menu #desplegable ul li:hover {
+    color: #000000;
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  header #io_menu #card_menu #desplegable ul li:hover a {
+    color: #000000;
+  }
+  header #io_menu #card_menu #desplegable ul li a {
+    text-decoration: none;
+    font-family: "FuturaStd-BoldOblique";
+    font-size: 14px;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.579);
+    mix-blend-mode: multiply;
+    transition: 0.5s;
+  }
+  header #io_menu .logo {
+    width: 120px;
+    align-items: center;
+    display: block;
+    mix-blend-mode: multiply;
+    position: relative;
+    text-align: center;
+    z-index: 98;
+  }
+  header #io_menu .lupa_carrito {
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    mix-blend-mode: multiply;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header #io_menu .lupa_carrito img {
+    height: 40px;
+    mix-blend-mode: multiply;
+    display: inline;
+    padding: 10px;
+  }
+  .slider_container {
+    width: 100%;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  ul.slider_opacity li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    display: none;
+    width: inherit;
+    height: inherit;
+    transition: all 0.5s;
+  }
+  ul.slider_opacity li h1 {
+    top: 25px;
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    font-family: "FuturaStd-BoldOblique";
+    font-size: 48px;
+    color: #ffffff;
+  }
+  .menu_slider {
+    top: 560px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  #cuadro1 {
+    background-position: center;
+    background-image: url(../assets/img/bannerprincipal.jpg);
+    padding: 100px 200px;
+    height: 600px;
+  }
+  #cuadro2 {
+    background-position: center;
+    padding: 100px 200px;
+    height: 600px;
+  }
+  #cuadro3 {
+    background-position: -70px;
+    padding: 100px 200px;
+    height: 600px;
+  }
+  main.mision {
+    height: 600px;
+  }
+  main.mision .mision_banner video {
+    height: 145%;
+  }
+  section .grid_container_productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .banners_secundarios {
+    background-position: center;
+    padding: 20px 200px;
+  }
+  main.galeria {
+    padding: 60px;
+  }
+  main.galeria .grid_container_galerias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0px;
+  }
+  main.galeria .grid_container_galerias .shop_card {
+    height: 310px;
+    padding: 10px;
+    border: 3px solid #ffffff;
+  }
+  main.galeria .grid_container_galerias .shop_card .mochila1-foto,
+main.galeria .grid_container_galerias .shop_card .mochila2-foto,
+main.galeria .grid_container_galerias .shop_card .bolso1-foto,
+main.galeria .grid_container_galerias .shop_card .morral1-foto,
+main.galeria .grid_container_galerias .shop_card .bolsov1-foto,
+main.galeria .grid_container_galerias .shop_card .bolsov2-foto,
+main.galeria .grid_container_galerias .shop_card .accesorio1-foto,
+main.galeria .grid_container_galerias .shop_card .accesorio2-foto {
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+  }
+  main .banner_comunidad {
+    padding: 60px 200px;
+    background-position: center;
+  }
+  main .banner_comunidad h1 {
+    top: 25px;
+    position: relative;
+    margin-top: 100px;
+    width: 400px;
+    font-family: "FuturaStd-BoldOblique";
+    font-size: 40px;
+    color: #ffffff;
+  }
+  section.comunidad {
+    padding: 20px 200px;
+  }
+  section .grid_container_comunidad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+  .bajada_nota {
+    padding: 20px 200px;
+  }
+  main.contacto {
+    padding: 35px;
+  }
+  main.contacto .encabezado_contacto {
+    height: 100px;
+    margin-top: 20px;
+  }
+  main.contacto .encabezado_contacto h1 {
+    top: 0px;
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    font-family: "FuturaStd-HeavyOblique";
+    font-size: 22px;
+    color: #000000;
+  }
+  main.contacto .encabezado_contacto p {
+    width: 80%;
+    font-size: 18px;
+  }
+  main.contacto form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    padding: 45px;
+  }
+  main.contacto form .caja1 {
+    width: 350px;
+  }
+  main.contacto form .caja2 {
+    width: 350px;
+  }
+  main.contacto form .caja2 textarea {
+    height: 150px;
+  }
+  main.contacto form .caja2 div {
+    text-align: left;
+  }
+  footer h4 {
+    font-size: 13px;
+  }
+  .grid_container_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .shipping {
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  .logo_footer {
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: none;
+  }
+  .empresa_footer {
+    padding: 20px 10px;
+    border-bottom: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .empresa_footer p {
+    font-size: 10px;
+  }
+  .contenido_ayuda {
+    padding: 20px;
+    justify-content: space-around;
+    border-bottom: none;
+  }
+}
+@media only screen and (min-width: 1680px) {
+  #cuadro1 {
+    background-position: center;
+    background-image: url(../assets/img/bannerprincipal.jpg);
+    padding: 100px 400px;
+    height: 600px;
+  }
+  #cuadro2 {
+    background-position: center;
+    padding: 100px 400px;
+    height: 600px;
+  }
+  #cuadro3 {
+    background-position: center;
+    padding: 100px 400px;
+    height: 600px;
+  }
+  main.mision {
+    height: 900px;
+  }
+  main.mision .mision_banner video {
+    height: 250%;
+  }
+  main.galeria {
+    padding: 60px;
+  }
+  main.galeria .grid_container_galerias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0px;
+  }
+  main.galeria .grid_container_galerias .shop_card {
+    height: 400px;
+    padding: 10px;
+    border: 3px solid #ffffff;
+  }
+  main.galeria .grid_container_galerias .shop_card .mochila1-foto,
+main.galeria .grid_container_galerias .shop_card .mochila2-foto,
+main.galeria .grid_container_galerias .shop_card .bolso1-foto,
+main.galeria .grid_container_galerias .shop_card .morral1-foto,
+main.galeria .grid_container_galerias .shop_card .bolsov1-foto,
+main.galeria .grid_container_galerias .shop_card .bolsov2-foto,
+main.galeria .grid_container_galerias .shop_card .accesorio1-foto,
+main.galeria .grid_container_galerias .shop_card .accesorio2-foto {
+    width: 100%;
+    height: 300px;
+    background-color: #ffffff;
+  }
+}
+/* @MEDIA QUERIES FINALIZA *//*# sourceMappingURL=estilos.css.map */

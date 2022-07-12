@@ -1,0 +1,142 @@
+// SLIDER OPACITY INICIA
+.slider_container{
+    width: 100%;
+    align-items: center;
+    height: 420px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+ul.slider_opacity{
+    position: relative;
+    width: 100%;
+}
+
+ul.slider_opacity li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    display: none;
+    width: inherit;
+    height: inherit;
+    transition: all 0.5s;
+    h1{
+        @include titulos(25px, relative, 100px, 200px, $futuraBO, 35px, $blanco);
+    }
+    
+}
+.botton_skew{
+    top: 30px;
+    height: 30px;
+    width: 150px;
+    border: solid $blanco 1px;
+    display: block;
+    transform: skewX(-9deg);
+    text-align: center;
+    line-height: 30px;
+    color: $blanco;
+    position: relative;
+    text-decoration: none;
+    transition: 1.5s;
+    p{
+        width: 150px;
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        font-family: $montserratI;
+        font-size: 17px;
+        color: $blanco;
+        position: relative;
+        transform: skewX(9deg);
+        transition: 2s;
+    }
+    &:hover{
+        background-color: $blanco;
+        border: solid $blanco 1px;
+        width: 180px;
+        p{
+            color: $negro;  
+            width: 180px;
+        }
+    }
+}
+
+
+#cuadro1{
+    height: 420px;
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    list-style: none;
+    background-image: url(../assets/img/bannerprincipal_chico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -148px;  
+}
+#cuadro2{
+    height: 420px;
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    list-style: none;
+    background-image: url(../assets/img/banner_comunidad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -458px;
+}
+#cuadro3{
+    height: 420px;
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    list-style: none;
+    background-image: url(../assets/img/banner_bolsos_historia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+
+.menu_slider{
+    top: 380px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.menu_slider li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu_slider li a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.249);
+    width: 15px;
+    height: 15px;
+    font-size: 20px;
+    border-radius: 100%;
+    margin: 10px;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.599);
+    }
+}
+
+ul.slider_opacity li:first-child{
+opacity: 1;
+display: block;
+}
+
+ul.slider_opacity li:target{
+    opacity: 1;
+    display: block;
+}
+
+
+
+// SLIDER OPACITY FINALIZA

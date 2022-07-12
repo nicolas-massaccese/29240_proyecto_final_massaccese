@@ -1,0 +1,44 @@
+/* COMUNIDAD PAGINA INICIA */
+
+main{
+    .banner_comunidad{
+        @extend .banner;
+        background-image: url(../assets/img/banner_comunidad.jpg);
+        background-position: -450px;
+        h1{
+            @include titulos(25px, relative, 100px, 200px, $futuraBO, 35px, $blanco);
+        }
+    }
+}
+section{
+    .grid_container_comunidad{
+        width: 100%;
+        .notas{
+            text-decoration: none;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+            .bajada_nota{
+                padding: 10px 20px 20px 20px;
+                transition: 1s;
+                h3{
+                text-align: left;
+                line-height: 25px;
+                color: black;
+                font-family: "FuturaStd-BoldOblique";
+                font-size: 20px;
+                }
+                p{
+                    text-align: left;
+                    line-height: 30px;
+                    color: $gris;
+                    font-family: "Montserrat-Regular";
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* COMUNIDAD PAGINA FINALIZA */
